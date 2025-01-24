@@ -13,8 +13,8 @@ class MyDrawer extends StatelessWidget {
             decoration: BoxDecoration(
               color: Color(0xFFE25E36),
             ),
-            accountName: Text("Speakx"),
-            accountEmail: Text("contact@ivypods.com"),
+            accountName: Text("ABC Company"),
+            accountEmail: Text("contact@abc.com"),
             currentAccountPicture: CircleAvatar(
               backgroundImage: AssetImage(
                   "assets/images/img.png"
