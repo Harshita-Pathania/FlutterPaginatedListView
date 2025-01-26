@@ -1,7 +1,7 @@
 // Importing RiverPod for state management
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 // Importing the mock API
-import '../view_models/mock_api.dart';
+import '../models/mock_api.dart';
 
 // ViewModel to handel Stateful functions using StateNotifier
 class HomeViewModel extends StateNotifier<HomeState> {
