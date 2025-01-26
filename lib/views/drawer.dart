@@ -1,14 +1,21 @@
+// Importing the Material Design library for Flutter
 import 'package:flutter/material.dart';
 
+// custom drawer widget with side panel
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
+    // Using built in side panel drawer
     return Drawer(
+      // Create scrollable list of items
       child: ListView(
+        // Removes padding
         padding: const EdgeInsets.all(0),
         children: <Widget>[
+          // Header Section
+          // Change values to customize accordingly
           UserAccountsDrawerHeader(
             decoration: BoxDecoration(
               color: Color(0xFFE25E36),
@@ -17,7 +24,7 @@ class MyDrawer extends StatelessWidget {
             accountEmail: Text("contact@abc.com"),
             currentAccountPicture: CircleAvatar(
               backgroundImage: AssetImage(
-                  "assets/images/img.png"
+                  "assets/images/img.png"   // To change image copy and paste image in assets/images folder and replace name over here
               ),
             ),
           ),
@@ -30,13 +37,15 @@ class MyDrawer extends StatelessWidget {
 
             },
           ),
+          // List items
+          // Change values to customize accordingly
           ListTile(
             leading: Icon(Icons.contact_mail),
             title: Text('Contact Us'),
             subtitle: Text('Get in touch with our support team'),
             trailing: Icon(Icons.arrow_forward, color: Colors.grey),
             onTap:() {
-
+            //   Add actions to perform on click (eg. Navigate to another activity)
             },
           ),
           ListTile(
@@ -45,7 +54,7 @@ class MyDrawer extends StatelessWidget {
             subtitle: Text('Understand our terms of service'),
             trailing: Icon(Icons.arrow_forward, color: Colors.grey),
             onTap:() {
-
+              //   Add actions to perform on click (eg. Navigate to another activity)
             },
           ),
           ListTile(
@@ -54,7 +63,7 @@ class MyDrawer extends StatelessWidget {
             subtitle: Text('How we protect your personal data'),
             trailing: Icon(Icons.arrow_forward, color: Colors.grey),
             onTap:() {
-
+              //   Add actions to perform on click (eg. Navigate to another activity)
             },
           ),
           ListTile(
@@ -63,7 +72,7 @@ class MyDrawer extends StatelessWidget {
             subtitle: Text('Learn about our refund policy'),
             trailing: Icon(Icons.arrow_forward, color: Colors.grey),
             onTap:() {
-
+              //   Add actions to perform on click (eg. Navigate to another activity)
             },
           ),
           ListTile(
@@ -72,7 +81,7 @@ class MyDrawer extends StatelessWidget {
             subtitle: Text('Understand how to delete your data'),
             trailing: Icon(Icons.arrow_forward, color: Colors.grey),
             onTap:() {
-
+              //   Add actions to perform on click (eg. Navigate to another activity)
             },
           )
         ],
