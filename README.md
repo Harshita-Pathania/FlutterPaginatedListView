@@ -1,4 +1,4 @@
-# Project: Two-Way Paginated List View with Riverpod and Mock API Integration
+# Two-Way Paginated List View with Riverpod and Mock API Integration
 
 ## Overview
 This project demonstrates a **two-way paginated list view** built using Flutter. The app integrates:
